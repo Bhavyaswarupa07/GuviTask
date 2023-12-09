@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guvi Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #ff8c42; /* Orange */
+            color: white;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .border-rounded {
+            border: 1px solid #dcdcdc;
+            border-radius: 10px;
+            background-color: #fbd6d7; /* Baby Pink */
+            padding: 20px;
+        }
+
+        .btn-secondary {
+            background-color: #ff8c42; /* Orange */
+            border-color: #ff8c42; /* Orange */
+        }
+
+        .btn-secondary:hover {
+            background-color: #ff7043; /* Darker Orange */
+            border-color: #ff7043; /* Darker Orange */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar px-4">
+        <span class="navbar-brand mb-0 h1">Certified</span>
+        <div class="ml-auto">
+            <button class="btn btn-secondary">Logout</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form class="border-rounded" id="profileForm">
+            <h2 class="m-4">User Profile</h2>
+            <div class="form-group row m-2">
+                <label for="userName" class="col-3 col-form-label">Name:</label>
+                <div class="col-9">
+                    <input type="text" class="form-control" id="userName" placeholder="Enter your name" readonly>
+                </div>
+            </div>
+            <div class="form-group row m-2">
+                <label for="userEmail" class="col-3 col-form-label">Email:</label>
+                <div class="col-9">
+                    <input type="email" class="form-control" id="userEmail" placeholder="Enter Your Mail" readonly>
+                </div>
+            </div>
+            <div class="form-group row m-2">
+                <label for="contactNumber" class="col-3 col-form-label">Contact Number:</label>
+                <div class="col-9">
+                    <input type="number" class="form-control" id="contactNumber"
+                        placeholder="Enter Your Contact Number" readonly>
+                </div>
+            </div>
+            <div class="form-group row m-2">
+                <label for="userDob" class="col-3 col-form-label">Date of Birth(D.O.B):</label>
+                <div class="col-9">
+                    <input type="date" class="form-control" id="userDob" placeholder="Enter Your (D.O.B)" readonly>
+                </div>
+            </div>
+            <div class="form-group row" style="margin-left: 200px; margin-right:200px; margin-bottom:20px; margin-top:40px">
+                <button type="submit" class="btn btn-secondary m-2" id="editBtn">Edit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="assets/jquery.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
